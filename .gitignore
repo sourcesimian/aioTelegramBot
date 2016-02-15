@@ -1,0 +1,16 @@
+tests/env.py
+*.pyc
+.idea
+.DS_Store
+.coverage
+_trial_temp*
+virtualenv/
+htmlcov/*
+*.egg-info
+log
+twisted/plugins/dropin.cache
+*/__pycache__/*
+dist/
+TelegramBotAPI
+config.ini
+pyplugin
