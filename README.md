@@ -35,6 +35,8 @@ pip3 install aioTelegramBot
 
 * Write a plugin using the following template and add it in the \[message_plugins\] section above:
     ```
+    import asyncio
+    
     from TelegramBotAPI.types import sendMessage
     from TelegramBot.plugin import BotPlugin
     
@@ -61,7 +63,7 @@ pip3 install aioTelegramBot
                     m.text = 'You said: "%s"' % msg.text
     
             rsp = yield from self.send_method(m)
-        return True
+            return True
     ```
 
 * Run the bot:
